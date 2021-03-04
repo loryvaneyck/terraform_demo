@@ -14,7 +14,7 @@ resource "azurerm_network_interface" "vmB" {
 }
 
 resource "azurerm_linux_virtual_machine" "vmB" {
-  name                = "example-machine"
+  name                = "VMB"
   resource_group_name = azurerm_resource_group.tfdemo.name
   location            = azurerm_resource_group.tfdemo.location
   size                = "Standard_B1s"

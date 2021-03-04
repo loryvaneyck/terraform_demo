@@ -5,7 +5,7 @@ resource "azurerm_network_security_group" "vnetB" {
 }
 
 resource "azurerm_virtual_network" "vnetB" {
-  name                = "vnetB"
+  name                = "VNetB"
   location            = azurerm_resource_group.tfdemo.location
   resource_group_name = azurerm_resource_group.tfdemo.name
   address_space       = ["192.168.0.0/16"]
